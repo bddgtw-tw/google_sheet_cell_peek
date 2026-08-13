@@ -1,0 +1,100 @@
+#sheet-cell-peek-tooltip {
+  position: fixed;
+  z-index: 2147483647;
+  display: none;
+  max-width: 420px;
+  min-width: 220px;
+  padding: 12px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  background: #fff;
+  color: #202124;
+  box-shadow: 0 4px 16px rgba(60,64,67,.28);
+  font: 14px/1.5 Arial, sans-serif;
+}
+
+#sheet-cell-peek-content {
+  max-height: 240px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+#sheet-cell-peek-header {
+  display: flex;
+  justify-content: flex-end;
+  height: 20px;
+  margin: -8px -8px 0;
+  cursor: move;
+}
+
+#sheet-cell-peek-close {
+  min-width: 24px;
+  padding: 0 4px;
+  border: 0;
+  background: transparent;
+  color: #5f6368;
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+#sheet-cell-peek-close:hover {
+  border-radius: 4px;
+  background: #f1f3f4;
+  color: #202124;
+}
+
+#sheet-cell-peek-content.editing {
+  min-height: 80px;
+  padding: 6px;
+  border: 1px solid #1a73e8;
+  border-radius: 4px;
+  outline: none;
+  background: #fff;
+}
+
+#sheet-cell-peek-copy {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 4px;
+  background: #1a73e8;
+  color: #fff;
+  cursor: pointer;
+}
+
+#sheet-cell-peek-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#sheet-cell-peek-controls button {
+  min-width: 30px;
+  padding: 5px 8px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  background: #fff;
+  color: #202124;
+  cursor: pointer;
+}
+
+#sheet-cell-peek-controls button:hover {
+  background: #f1f3f4;
+}
+
+#sheet-cell-peek-size-label {
+  min-width: 42px;
+  color: #5f6368;
+  font-size: 12px;
+  text-align: center;
+}
+
+#sheet-cell-peek-count {
+  min-width: 42px;
+  margin-left: 8px;
+  color: #5f6368;
+  font-size: 12px;
+  text-align: center;
+}

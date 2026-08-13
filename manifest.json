@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Google Sheet Cell Peek",
+  "version": "0.2.0",
+  "description": "Preview, copy, count, resize, and edit Google Sheets cell content.",
+  "permissions": ["debugger", "storage"],
+  "host_permissions": ["https://docs.google.com/spreadsheets/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/spreadsheets/*"],
+      "js": ["content.js", "font-fix.js"],
+      "css": ["tooltip.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Sheet Cell Peek",
+    "default_popup": "popup.html"
+  }
+}
