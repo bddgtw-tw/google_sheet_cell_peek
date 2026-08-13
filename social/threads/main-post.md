@@ -26,3 +26,8 @@ https://github.com/bddgtw-tw/google_sheet_cell_peek
 如果你常在 Google Sheets 裡處理很長的文案、商品描述或備註，歡迎留言告訴我你的使用情境。
 
 #GoogleSheets #ChromeExtension #OpenSource #BuildInPublic #Productivity
+
+## Suggested image
+
+![Google Sheet Cell Peek demo](assets/google-sheet-cell-peek-demo.png)
+
